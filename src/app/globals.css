@@ -3,19 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --hanuman: "Hanuman", serif;
+  --DM: "DM Serif Text", serif;
+  --background: "#f257aa";
+  --click: "#f0183c";
+  --text: "#f24663";
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.hanuman {
+  font-family: var(--hanuman);
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.DM {
+  font-family: var(--DM);
+}
+.backs {
+  background-color: var(--background);
+}
+.clicks:hover {
+  /* background-color: var(--click); */
+  background-color: #f04662;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  transform: scale(1.05);
+  /* color: var(--text); */
+  color: rgb(250, 242, 11) !important;
+  font-size: large;
+  font-weight: bold;
 }
